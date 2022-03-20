@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--external links-->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);  
+      }
+      /* Style inputs with type="text", select elements and textareas */
+      input[type=email], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid rgb(255, 237, 237); /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: horizontal /* Allow the user to HORIZONTALLY resize the textarea (not horizontally) */
+      }
+
+      /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+        background-color: #b6b6b6;
+        color: rgb(0, 0, 0);
+        font-size: medium;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+        background-color: #19f75be7;
+      }
+
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+      } 
+      .fa {
+        padding: 20px;
+        font-size: 17px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 3px 10px;
+        border-radius: 20%;
+        height: 15px;
+      }
+</style>
+</head>
+<body>
+    <!-- navbar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#" id="left-side"><strong><i>E-Book</i></strong></a></li>
+        <li class="nav-item active"><a href="#" class="nav-link" >Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+      </ul>
+    </nav>
+    <!--query section-->
+    <div class="container">
+      <form action="action_page.php">
+    
+      <label for="mail"><strong>E-mail</strong></label>
+      <input type="email" id="mail" name="mail_id" placeholder="Your mail id..">
+      <label for="subject"><strong>Subject</strong></label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" style="float: right;" value="Submit">
+      
+      </form>
+    </div>
+    <!--footer--> 
+    <center>
+    <footer>
+      <div class="ridge">
+      <h3>E-Book</h3>
+      <p>Copyright © 2022 E-Book</p>
+      <!--social media icons-->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </footer></center>
+  </div>
+</div>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*login.html*/
+.col-md-12{
+	padding-top: 100px;
+}
+
+#login
+{
+	left:50px;
+}
+
+#login{
+	padding-bottom: 40px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(204, 200, 200);
+	width: 450px;
+	padding-top: 20px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.submit_bottom{
+	padding-top: 10px;
+	color: rgb(0, 0, 0);
+}
+
+form{ 
+	width: 450px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: rgb(204, 200, 200);
+	padding: 18px 22px 18px 22px;
+	box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.btn-btn-primary{
+	padding: 6px 9px 6px 9px;
+}
+
+.space{
+	color: rgb(240, 9, 9);
+}
+
+#change-color{
+	color: rgb(240, 9, 9);
+}
+
+.change-size{
+	width: 120px;
+	height: 110px;
+}
+

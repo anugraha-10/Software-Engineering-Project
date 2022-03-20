@@ -1,0 +1,65 @@
+/*login_page.html*/
+#bg-img{
+  
+  filter: grayscale(100%);
+  width: 100%;
+
+}
+ 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://github.com/anugraha-10/Software-Engineering-Project/blob/main/login_bg_new.jpg?raw=true);
+  background-position: center;
+  background-size:initial;
+  background-repeat: no-repeat;
+}
+
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(33, 1, 121, 0.877);
+  line-height: 60px;
+  font-size: medium;
+}
+
+nav ul{
+  float: right;
+  margin-right: 50px;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav-link:hover{
+  background-color: rgba(14, 13, 13, 0.533);
+  color: rgb(223, 208, 0);
+}
+
+.nav-link{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+#left-side{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-right: 920px;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: large;
+}
+
+button {
+  background-color: #0001;
+  border: none;
+}
+
