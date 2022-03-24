@@ -1,88 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>MyCart</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="cart.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
+   <!-- navbar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#" id="left-side">E-Book</a></li>
+        <div class="dropdown">
+        <button class="dropbtn">
+          <li class="nav-item"><a href="#" class="nav-link"><strong>Categories</strong></a></li>
+        <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Computer science</a>
+            <a href="#">Novel</a>
+            <a href="#">History</a>
+        </div>
+      
+      </div>
+      <li class="nav-item active"><a href="#" class="nav-link" ><strong>Home</strong></a></li>
+      </ul>
+    </nav>
+  </div> 
+
 <div class="container">
-  <div class=”Header”>
-    <h3 class=”Heading”>Shopping Cart</h3>
-    <a href="#" id="remove"><h5 class=”Action”>Remove all</h5></a>
+  <div>
+    <h3 >Shopping Cart</h3>
+    <button style="float: right;background-color: #4CAF50;width: 90px;height: 30px;padding-left: 8px;padding-right: 8px;padding-top: 8px;padding-bottom: 8px;">Remove all</button>
           <div class="address">
             <input type="number" placeholder="Pincode" />
             <input type="text"  placeholder="Landmark" />
             <input type="text" placeholder="Country" />
-            <button type="button" id="clickme">Click Me!</button>
-            
-          </div>
-        </div>
-        <h1>Deliver to:</h1>
-        <div class="shipping_card">
-          <div class="new_card">
-            <h4>Same as personal</h4>
-            <p id="output">Amrita school of engineering  </p>
-            <p>Amritapuri</p>
-          </div>
-          <div class="add_savedcard">
-            <a href="#" id ="change"><h4>change</h4></a>
-          </div>
-        </div>
-        <div class="proced_payment">
-          <a href="">Procced to payment</a>
-        </div>
-      </div>
-    </div>
-    <div class="order_summary">
-      <h1>Order Summary</h1>
-      <div class="summary_card">
-        <div class="card_item">
-          <div class="product_img">
-            <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b1.jpg?raw=true" alt=""/>
-          </div>
-          <div class="product_info">
-            <h1>C++ Programming Language</h1>
-            <div class="close-btn">
-              <i class="fa fa-close"></i>
-            </div>
-            <div class="product_rate_info">
-              <h1>$ 200</h1>
-              <span class="pqt-minus">-</span>
-              <span class="pqt">1</span>
-              <span class="pqt-plus">+</span>
+            <button type="button" id="clickme"><b>Click Me!</b></button>
+            <div class="proceed_payment">
+                <a href="Payment Checkout Form.html">Procced to payment</a>
             </div>
           </div>
         </div>
-        <div class="card_item">
-          <div class="product_img">
-            <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b2.jpg?raw=true" alt="" />
-          </div>
-          <div class="product_info">
-            <h1>Python Programming Language</h1>
-            <div class="close-btn">
-              <i class="fa fa-close"></i>
+        <div class="order_summary">
+            <h1>Order Summary</h1>
+            <div class="summary_card">
+              <div class="card_item">
+                <div class="product_img">
+                  <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b1.jpg?raw=true" alt=""/>
+                </div>
+                <div class="product_info">
+                  <h1>C++ Programming Language</h1>
+                  <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                  </div>
+                  <div class="product_rate_info">
+                    <h1>$ 200</h1>
+                    <span class="pqt-minus">-</span>
+                    <span class="pqt">1</span>
+                    <span class="pqt-plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="product_img">
+                  <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b2.jpg?raw=true" alt="" />
+                </div>
+                <div class="product_info">
+                  <h1>Python Programming Language</h1>
+                  <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                  </div>
+                  <div class="product_rate_info">
+                    <h1>$ 160</h1>
+                    <span class="pqt-minus">-</span>
+                    <span class="pqt">1</span>
+                    <span class="pqt-plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="order_price">
+                <p>Order summary</p>
+                <h4>$400</h4>
+              </div>
+              <div class="order_service">
+                <p>Additional Service</p>
+                <h4>$10</h4>
+              </div>
+              <div class="order_total">
+                <p>Total Amount</p>
+                <h4>$370</h4>
+              </div>
             </div>
-            <div class="product_rate_info">
-              <h1>$ 160</h1>
-              <span class="pqt-minus">-</span>
-              <span class="pqt">1</span>
-              <span class="pqt-plus">+</span>
-            </div>
           </div>
         </div>
-        <hr />
-        <div class="order_price">
-          <p>Order summary</p>
-          <h4>$400</h4>
-        </div>
-        <div class="order_service">
-          <p>Additional Service</p>
-          <h4>$10</h4>
-        </div>
-        <div class="order_total">
-          <p>Total Amount</p>
-          <h4>$370</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<!--footer--> 
+<center>
+    <footer>
+      <div class="ridge">
+      <h3>E-Book</h3>
+      <p>Copyright © 2022 E-Book</p>
+      <!--social media icons-->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </footer></center>        
+</body> 
