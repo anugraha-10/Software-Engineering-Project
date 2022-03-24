@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <body style="background-color: lightslategray">
+<html> 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-</body>  
 body {
+background-color : rgb(255, 255, 255);
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
+}
+
+/*footer*/
+footer{
+  font-size: larger;
+  padding-top: 55px;
+  background-color: #dfdede;
+  color: #ffffff;
+  
+}
+
+.ridge{
+  border-style: solid ridge;
+  padding-bottom: 32px;
+  padding-top: 35px;
+  background-color: rgb(90, 87, 87);
+  height: 230px;
+}
+
+.fa:hover {
+  opacity: 0.4;
+}
+
+.fa-facebook {
+  
+  color: rgb(255, 255, 255);
+}
+
+.fa-twitter{
+  padding-left: 15px;
+  color: white;
+}
+
+.fa-google {
+  padding-left: 15px;
+  color: white;
+}
+
+.fa-linkedin {
+    padding-left: 15px;
+  color: white;
+}
+
+.fa-youtube {
+    padding-left: 15px;
+  color: white;
+}
+
+.fa-instagram {
+    padding-left: 15px;
+  color: white;
 }
 
 * {
@@ -46,7 +96,7 @@ body {
 }
 
 .container {
-  background-color: lightseagreen;
+  background-color: rgb(187, 179, 179);
   padding: 5px 20px 15px 20px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 3px;
@@ -111,9 +161,9 @@ span.price {
 }
 </style>
 </head>
-<body>
+<body><center>
 <h2>Payment Checkout Form</h2>
-<p>Online Secure Payment</p>
+<p>Online Secure Payment</p></center>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -290,11 +340,12 @@ span.price {
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Cart <span class="price" style="color:rgb(2, 1, 1)"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <h4>Cart <span class="price" style="color:rgb(2, 1, 1)"><i class="fa fa-shopping-cart"></i> <b>5</b></span></h4>
       <p><a href="#">Item 1</a> <span class="price">Rs </span></p>
       <p><a href="#">Item 2</a> <span class="price">Rs </span></p>
       <p><a href="#">Item 3</a> <span class="price">Rs </span></p>
       <p><a href="#">Item 4</a> <span class="price">Rs </span></p>
+      <p><a href="#">Item 5</a> <span class="price">Rs </span></p>
       <hr>
       <p>Total <span class="price" style="color:rgb(2, 1, 1)"><b>Rs</b></span></p>
       <label>
@@ -305,6 +356,19 @@ span.price {
     </div>
   </div>
 </div>
-
+<!--footer--> 
+<center>
+    <footer>
+      <div class="ridge">
+      <h3>E-Book</h3>
+      <p>Copyright © 2022 E-Book</p>
+      <!--social media icons-->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </footer></center>
 </body>
 </html>
