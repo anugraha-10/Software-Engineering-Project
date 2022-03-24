@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <!--external links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <!--internal css-->
+    <style>
+      body{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        
+      }
+    </style>
+  </head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#" id="left-side"><strong>E-Book</strong></a></li>
+          <div class="dropdown">
+          <button class="dropbtn">
+            <li class="nav-item"><a href="#" class="nav-link"><strong>Categories</strong></a></li>
+          <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+          </div>
+        
+        </div>
+        <li class="nav-item active"><a href="#" class="nav-link" ><strong>Home</strong></a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--forms-->
+    <center>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h2>Sign up</h2>
+              <form action="" method="post">
+                <div class="form-group">
+                  <label>Full name</label>
+                  <input type="text" name="name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" name="mail" class="form-control" required />
+                  </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" name="password" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm-password" class="form-control" required />
+                  </div>
+                <div class="form-group">
+                  <input type="submit" name="submit" class="btn-btn-primary" value="Submit">
+                </div>
+                <p>Already have an account? <a href="login.html" id="">Login here</a></p>
+              </form>
+          </div>
+
+        </div>
+    </div></center>
+</body>
+</html>
