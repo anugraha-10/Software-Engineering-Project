@@ -23,9 +23,19 @@
     <nav>
       <ul>
         <li><a href="#" id="left-side"><strong>E-Book</strong></a></li>
-        <li class="nav-item active"><a href="#" class="nav-link" >Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 60px;"><li class="nav-item"><a href="login.html" class="nav-link">Login</a></li></button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;height: 65px;"><li class="nav-item"><a href="login.html" class="nav-link"><strong>Login</strong></a></li></button>
+        <div class="dropdown">
+        <button class="dropbtn">
+          <li class="nav-item"><a href="#" class="nav-link"><strong>Categories</strong></a></li>
+        <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Link1</a>
+          <a href="#">Link1</a>
+          <a href="#">Link1</a>
+        </div>
+      
+      </div>
+      <li class="nav-item active"><a href="#" class="nav-link" ><strong>Home</strong></a></li>
       </ul>
     </nav>
   </div>
