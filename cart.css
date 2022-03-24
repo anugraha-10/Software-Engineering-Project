@@ -1,225 +1,112 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
-  }
-  
-  h1 {
-    font-size: 16px;
-    margin: 5px;
-  }
-  .container {
-    width: 100%;
-    height: 92vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f9fafc;
-  }
-  
-  /*
-  Payment Information card
-  */
-  .Header{
-    margin: auto;
-    width: 90%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   }
-   .Heading{
-    font-size: 20px;
-    font-family: ‘Open Sans’;
-    font-weight: 700;
-    color: #2F3841;
-   }
-   .Action{
-    font-size: 14px;
-    font-family: ‘Open Sans’;
-    font-weight: 600;
-    color: #E44C4C;
-    cursor: pointer;
-    border-bottom: 1px solid #E44C4C;
-   }
-  .details_card {
-    width: 700px;
-    height: 400px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #fff;
-  }
-  
-  /*
-  Order Summary Card
-  */
-  .summary_card {
-    background-color: #fff;
-    width: 350px;
-    height: 400px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  /*
-  Order Card Item Card
-  */
-  .card_item {
-    display: flex;
-    position: relative;
-    margin: 10px 0;
-  }
-  .close-btn {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-  }
-  
-  .card_item .product_img img {
-    height: 80px;
-    margin-right: 20px;
-    width: 70px;
-    border-radius: 5px;
-  }
-  
-  .product_info h1 {
-    font-size: 20px;
-    color: #1e212d;
-    margin: 5px 0;
-  }
-  
-  .product_info p {
-    color: #a1a1a1;
-    font-size: 14px;
-  }
-  .product_rate_info {
-    display: flex;
-    margin: 5px 0;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /*
-  cart item + & -
-  */
-  .pqt {
-    font-size: 20px;
-    line-height: 30px;
-    width: 30px;
-    text-align: center;
-  }
-  
-  .pqt-plus,
-  .pqt-minus {
-    background: #fcfcfc;
-    border: none;
-    font-size: 20px;
-    height: 100%;
-    padding: 0 15px;
-  }
-  .pqt-plus:hover,
-  .pqt-minus:hover {
-    background: #53b5aa;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .pqt-plus {
-    line-height: 30px;
-  }
-  
-  .pqt-minus {
-    line-height: 30px;
-  }
-  /*
-  Order price & total
-  */
-  .order_price,
-  .order_service,
-  .order_total {
-    display: flex;
-  
-    justify-content: space-between;
-    padding: 10px;
-  }
-  .order_price p,
-  .order_service p {
-    color: #a1a1a1;
-  }
-  
-  .order_total p {
-    font-weight: 600;
-  }
-  
-  /*
-  Payment Information all input
-  */
-  
-  input {
-    outline: 0;
-    background: #f2f2f2;
-    border-radius: 4px;
-    width: 100%;
-    border: 0;
-    caret-color: #4f5d7e;
-    margin: 10px 15px;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    font-size: 14px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyCart</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cart.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <!-- navbar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li><a href="#" id="left-side">E-Book</a></li>
+        <div class="dropdown">
+        <button class="dropbtn">
+          <li class="nav-item"><a href="#" class="nav-link"><strong>Categories</strong></a></li>
+        <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="#">Computer science</a>
+            <a href="#">Novel</a>
+            <a href="#">History</a>
+        </div>
+      
+      </div>
+      <li class="nav-item active"><a href="#" class="nav-link" ><strong>Home</strong></a></li>
+      </ul>
+    </nav>
+  </div> 
 
-  
-  .new_card {
-    width: 100%;
-    height: 100px;
-    border: 2px solid #53b5aa;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  
-  .add_savedcard {
-    width: 100%;
-    height: 100px;
-    border: 2px solid #a1a1a1;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  /*
-  Procced Payment button
-  */
-  .proced_payment a {
-    padding: 10px 20px;
-    width: 200px;
-    border: 2px solid #f5f5f5;
-    background-color: #53b5aa;
-    color: #000;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  footer {
-    background-color: #000;
-    color: #fff;
-    height: 50px;
-    text-align: center;
-  }
-  footer a {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  #remove{
-    float: right;
-  }
-  #clickme {
-    background-color: #4CAF50;
-    float: right;
-    height: 30px;
-    width: 70px;
-  } /* Green */
+<div class="container">
+  <div>
+    <h3 >Shopping Cart</h3>
+    <button style="float: right;background-color: #4CAF50;width: 90px;height: 30px;padding-left: 8px;padding-right: 8px;padding-top: 8px;padding-bottom: 8px;">Remove all</button>
+          <div class="address">
+            <input type="number" placeholder="Pincode" />
+            <input type="text"  placeholder="Landmark" />
+            <input type="text" placeholder="Country" />
+            <button type="button" id="clickme"><b>Click Me!</b></button>
+            <div class="proceed_payment">
+                <a href="Payment Checkout Form.html">Procced to payment</a>
+            </div>
+          </div>
+        </div>
+        <div class="order_summary">
+            <h1>Order Summary</h1>
+            <div class="summary_card">
+              <div class="card_item">
+                <div class="product_img">
+                  <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b1.jpg?raw=true" alt=""/>
+                </div>
+                <div class="product_info">
+                  <h1>C++ Programming Language</h1>
+                  <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                  </div>
+                  <div class="product_rate_info">
+                    <h1>$ 200</h1>
+                    <span class="pqt-minus">-</span>
+                    <span class="pqt">1</span>
+                    <span class="pqt-plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card_item">
+                <div class="product_img">
+                  <img src="https://github.com/anugraha-10/Software-Engineering-Project/blob/main/b2.jpg?raw=true" alt="" />
+                </div>
+                <div class="product_info">
+                  <h1>Python Programming Language</h1>
+                  <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                  </div>
+                  <div class="product_rate_info">
+                    <h1>$ 160</h1>
+                    <span class="pqt-minus">-</span>
+                    <span class="pqt">1</span>
+                    <span class="pqt-plus">+</span>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="order_price">
+                <p>Order summary</p>
+                <h4>$400</h4>
+              </div>
+              <div class="order_service">
+                <p>Additional Service</p>
+                <h4>$10</h4>
+              </div>
+              <div class="order_total">
+                <p>Total Amount</p>
+                <h4>$370</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--footer--> 
+<center>
+    <footer>
+      <div class="ridge">
+      <h3>E-Book</h3>
+      <p>Copyright © 2022 E-Book</p>
+      <!--social media icons-->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </footer></center>        
+</body> 
